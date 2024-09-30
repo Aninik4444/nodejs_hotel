@@ -7,4 +7,4 @@
 
 app.get('/person', function (req, res) {
     res.send('Welcome to my hotel')
-  })
+  }) 
