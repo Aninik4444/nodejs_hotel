@@ -96,7 +96,7 @@ app.get('/',function (req, res, next) {
   const personRoutes = require('./routes/person/personRoutes');
   const menuItemRoutes = require('./routes/menuItem/menuItemRoutes');
   // use the routers
-  app.use('/person',localAuthMiddleware,personRoutes);
+  app.use('/person',personRoutes);
   app.use('/menu',localAuthMiddleware,menuItemRoutes);
 
  
