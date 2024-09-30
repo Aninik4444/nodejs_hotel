@@ -7,8 +7,7 @@ const passport = require('./auth');
 // const passport = require('passport');
 // const localStrategy = require('passport-local').Strategy;
 // const Person = require('./models/Person');
-const PoRT = process.env.PORT || 3000;
-
+const PORT = process.env.PORT;
 app.use(bodyParser.json());
 
 // Middleware Function
@@ -103,7 +102,7 @@ app.get('/',function (req, res, next) {
  
  
   
-  app.listen(3000, ()=>{
+  app.listen(PORT, ()=>{
     console.log('Listening on port 3000');
   }) 
    
